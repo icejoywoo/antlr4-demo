@@ -3,7 +3,7 @@ import org.antlr.v4.runtime.CommonTokenStream;
 
 public class Driver {
     public static void main(String[] args) {
-        String query = "3.1 * (6.3 - 4.51) + 5";
+        String query = "3.1 * (6.3 - 4.51) + 5 * 4";
 
         CalculatorLexer lexer = new CalculatorLexer(new ANTLRInputStream(query));
         CalculatorParser parser = new CalculatorParser(new CommonTokenStream(lexer));
